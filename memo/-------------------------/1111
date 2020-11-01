@@ -1,0 +1,41 @@
+https://message-board-sinnkoro.herokuapp.com/
+https://git.heroku.com/message-board-sinnkoro.git
+
+
+$ cd ~/environment/
+
+
+$ cd ~/environment/□□□□□□□□□□/
+
+Laravelサーバを起動
+$ php artisan serve --host=$IP --port=$PORT
+
+MySQLサーバの起動を確認
+$ sudo service mysql status
+
+MySQLサーバ起動（まだ起動していない場合のみ実行）
+$ sudo service mysql start
+
+MySQLログイン
+$ sudo mysql -u root
+
+tinker起動
+$ php artisan tinker
+
+
+
+Herokuにログイン
+$ heroku login -i
+
+Herokuアプリケーションを作成
+$heroku create アプリケーション名
+$heroku create message-board
+
+Herokuアプリケーションが作成されたかの確認
+$ heroku apps
+
+リモートリポジトリherokuの確認
+$git remote -v
+
+heroku URL確認
+$ heroku apps:info
